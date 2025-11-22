@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  align-items: center;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+.loader {
+  position: relative;
+}
+.loader .circle {
+  align-items: center;
+  font-family: "Oxanium", sans-serif;
+  /*border: 2px solid #fff;*/
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  letter-spacing: 2px;
+  width: 200px;
+}
+.loader span {
+  color: #52a0ff;
+  font-size: 28px;
+  font-weight: 700;
+  left: 50%;
+  position: absolute;
+  text-shadow: 0 0 10px #52a0ff;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.loader .point{
+    animation: glow 0.9s linear infinite;
+    animation-delay: calc(var(--i)*0.008s);
+    background: #0007;
+    border-radius: 3px;
+    height: 15px;
+    position: absolute;
+    transform: rotate(calc(var(--i)*var(--rot))) translateY(-100px);
+    width: 3px;
+}
+@keyframes glow{
+    0%, 100%{
+        background: #0007;
+        box-shadow: none;
+    }
+    50%{
+        background: #52a0ff;
+        box-shadow: 0 0 10px #52a0ff;
+    }
+}
