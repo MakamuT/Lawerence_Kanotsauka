@@ -467,7 +467,7 @@ footer h1{
 .menu-icons{
   cursor: pointer;
   display: none;
-  font-size: 30px;
+  font-size: 35px;
 }
 /*sidebar*/
 .sidebar{
@@ -480,7 +480,7 @@ footer h1{
   position: fixed;
   right: 0;
   top: 0;
-  width: 0%;
+  width: 80%;
   z-index: 999;
 }
 .close-icon{
@@ -907,6 +907,7 @@ footer h1{
       }
   
       .footer h1 {
+        font-size: 15px;
         max-width: 150px;
       }
   
