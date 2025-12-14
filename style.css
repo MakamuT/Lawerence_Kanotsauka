@@ -391,24 +391,7 @@ header ul a{
   opacity: .7;
   width: 70%;
 }
-.skills{
-  align-items: start;
-  display: flex;
-  flex-direction: column;
-  left: 5%;
-  max-width: 30%;
-  position: absolute;
-  top: 25%;
-}
-.skills1{
-  align-items: start;
-    display: flex;
-    flex-direction: column;
-    max-width: 30%;
-    position: absolute;
-    right: 5%;
-    top: 25%;
-}
+
 .skills-box h1{
   align-items: center;
   display: flex;
@@ -884,6 +867,8 @@ footer h1{
       }
   
       .skills-box {
+        display: flex;
+        flex-wrap: wrap;
         height: 120vh;
         margin-right: 30px;
       }
