@@ -10,7 +10,7 @@
 
 <body>
     <div class="container">
-        <video class="back-vid" src="video/galaxy.mp4" type="video/mp4" loop autoplay muted plays-inline></video>
+        <video class="back-vid" src="video/galaxy.mp4" type="video/mp4" loop autoplay muted playsinline></video>
 
         <header>
             <nav>
@@ -35,7 +35,7 @@
         </div>
 
         <div class="blackhole-box">
-            <video loop autoplay muted plays-inline src="video/blackhole.mp4" type="video/mp4"></video>
+            <video loop autoplay muted playsinline src="video/blackhole.mp4" type="video/mp4"></video>
         </div>
 
         <section class="hero">
@@ -50,7 +50,7 @@
             </div>
 
             <div class="skills-video-box ">
-                <video class="skills-video autoBlur" autoplay loop muted plays-inline
+                <video class="skills-video autoBlur" autoplay loop muted playsinline
                     src="video/hero-video.mp4"></video>
             </div>
             <div class="scroll-down"></div>
@@ -100,7 +100,7 @@
                         exposure to coding and robotics in a workplace
                         setting.
                     </p>
-                    <video autoplay loop muted plays-inline src="video/glob.mp4" type="video/mp4"></video>
+                    <video autoplay loop muted playsinline src="video/glob.mp4" type="video/mp4"></video>
                 </div>
                 <div class="card">
                     <img src="images/grid4.png" alt="">
@@ -113,6 +113,7 @@
                         </li>
                     </ul>
                 </div>
+            </div>
 
         </section>
 
@@ -171,20 +172,20 @@
                 </div>
             </div>
         </section>
-
         <section class="contact-section">
             <h1 class="section-title autoDisplay">Let's talk</h1>
             <div class="social-box">
-                <a href="https://wa.me/60 524 2930"><i class="fa-brands fa-whatsapp"></i> +27 60 524 2930</a>
+                <a href="https://wa.me/27605242930"><i class="fa-brands fa-whatsapp"></i> +27 60 524 2930</a>
                 <a href="mailto:Lawrence.Kanotsauka@za.abb.com"><i
                         class="fa-solid fa-envelope-open"></i>Lawrence.Kanotsauka@za.abb.com</a>
-                <a href="linkedin.com/in/lawrence-kanotsauka-276b7526"><i class="fa-brands fa-linkedin"></i>Lawrence
+                <a href="https://linkedin.com/in/lawrence-kanotsauka-276b7526"><i class="fa-brands fa-linkedin"></i>Lawrence
                     Kanotsauka</a>
             </div>
+            </div>
 
-        </section>
         <footer>
-            <h1>&copy 2025, Coded by Techie_Thembi</h1>
+            <h1>&copy; 2025, Coded by Techie_Thembi</h1>
+            <div class="icons">
             <div class="icons">
                 <a href="https://www.instagram.com/techie.thembi/?hl=en"><i class="fa-brands fa-instagram"></i></a>
                 <a href=""><i class="fa-brands fa-whatsapp"></i></a>
@@ -197,7 +198,22 @@
         </footer>
     </div>
 
-    <script src="app.js"></script>
+    <script>
+        const sideBar = document.querySelector('.sidebar');
+            const menu = document.querySelector('.menu-icon');
+            const closeIcon = document.querySelector('.close-icon')
+
+        menu.addEventListener("click", function () {
+                sideBar.classList.remove("close-sidebar")
+                sideBar.classList.add("open-sidebar")
+            });
+
+            closeIcon.addEventListener("click", function () {
+                sideBar.classList.remove("open-sidebar");
+                sideBar.classList.add("close-sidebar");
+
+            })
+    </script>
 </body>
 
 </html>
