@@ -448,10 +448,11 @@ footer h1{
   font-size: 30px;
 }
 
-.menu-icons{
+.menu-icon{
   cursor: pointer;
   display: none;
   font-size: 35px;
+  margin-left: -550px;
 }
 /*sidebar*/
 .sidebar{
