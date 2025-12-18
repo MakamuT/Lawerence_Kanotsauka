@@ -43,7 +43,7 @@ header{
   padding: 0 30px;
   position: absolute;
   top: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 999;
 }
 nav{
@@ -452,7 +452,7 @@ footer h1{
   cursor: pointer;
   display: none;
   font-size: 35px;
-  margin-left: -550px;
+ 
 }
 /*sidebar*/
 .sidebar{
@@ -651,6 +651,7 @@ footer h1{
   
       .menu-icon {
         display: inline;
+        justify-content: left;
       }
   
       .blackhole-box video {
