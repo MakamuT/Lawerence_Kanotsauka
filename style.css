@@ -890,16 +890,16 @@ footer h1{
         left: 25%;
       }
   
-      .footer {
+      footer {
         padding: 15px;
       }
   
-      .footer h1 {
+      footer h1 {
         font-size: 15px;
         max-width: 150px;
       }
   
-      .footer .icons {
+      footer .icons {
         gap: 10px;
       }
 }
