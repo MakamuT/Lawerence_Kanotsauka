@@ -41,7 +41,7 @@ header{
   height: 70px;
   justify-content: space-between;
   padding: 0 30px;
-  position: absolute;
+  position: sticky;
   top: 0;
   width: 100vw;
   z-index: 999;
@@ -440,7 +440,7 @@ footer{
   height: 70px;
   justify-content: center;
   left: 0;
-  position: absolute;
+  position: sticky;
   right: 0;
   z-index: 999;
 }
@@ -891,7 +891,9 @@ footer h1{
       }
   
       footer {
+        margin-bottom: -50%;
         padding: 15px;
+        position: sticky;
       }
   
       footer h1 {
@@ -900,6 +902,7 @@ footer h1{
       }
   
       footer .icons {
+        flex-wrap: wrap;
         gap: 10px;
       }
 }
