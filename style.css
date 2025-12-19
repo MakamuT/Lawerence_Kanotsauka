@@ -401,6 +401,24 @@ header ul a{
 .skills-box p{
   line-height: 23px;
 }
+.skills{
+  position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    top: 25%;
+    left: 5%;
+    max-width: 300px;
+}
+.skills1{
+  position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    top: 25%;
+    right: 5%;
+    max-width: 300px;
+}
 
 .contact-section{
   align-items: center;
